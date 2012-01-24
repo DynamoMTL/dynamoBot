@@ -9,7 +9,10 @@
   "engines": {
     "node": "~0.4.4"
   },
-  "dependencies": {},
+  "dependencies": {
+		"underscore": "*",
+		"yaml": "*"
+	},
   "devDependencies": {},
   "optionalDependencies": {}
 }
