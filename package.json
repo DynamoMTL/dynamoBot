@@ -1,0 +1,15 @@
+{
+  "author": "Stephane Paull <stephane@godynamo.com>",
+  "name": "dynamoBot",
+  "description": "dynamo campfire bot",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.8"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}

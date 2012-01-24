@@ -1,0 +1,8 @@
+---
+  campfire:
+    token:   '57bc997b0dc05984a77734fae036b17fbf17300e'
+    account: 'dynamo1'
+    ssl:     true
+    room_ids:
+      - '347717'
+      - '452358'
