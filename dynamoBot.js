@@ -18,7 +18,7 @@ fs.readFile('./config.yml', 'utf-8', function(err,data){
 		});
 
 		bot.on('^!gist (.+)', function(gist,speaker){
-			this.speak("https://gist.github.com/#{gist}");
+			this.speak("https://gist.github.com/" + gist);
 		});
 
 		bot.on('^!out (.*)', function(reason, speaker){
