@@ -2,6 +2,12 @@ var marshmallow = require('./lib/marshmallow').marshmallow;
 var fs = require('fs');
 var yaml = require('yaml');
 
+var Github = [
+ "http://github.com"
+ ,""
+ ,""
+].join("/");
+
 var users_out = {};
 
 fs.readFile('./config.yml', 'utf-8', function(err,data){
@@ -13,6 +19,11 @@ fs.readFile('./config.yml', 'utf-8', function(err,data){
 	var config = yaml.eval(data).campfire;
 
 	marshmallow(config, function(bot){
+		/* Git review script */
+		bot.on('^!review (.+)', function(branch, speaker){
+			this.speak([Github, 'compare', branch].join("/"));
+		});
+
 		bot.on('^!pt (.+)', function(story_id,speaker){
 			this.speak("https://www.pivotaltracker.com/story/"+ story_id);
 		});
