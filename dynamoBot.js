@@ -21,7 +21,7 @@ fs.readFile('./config.yml', 'utf-8', function(err,data){
 	marshmallow(config, function(bot){
 		/* Git review script */
 		bot.on('^!review (.+) (.+)', function(repo, branch, speaker){
-			this.speak(['http://github.com','dynamoMTL', repo,'compare', branch].join("/"));
+			this.speak('http://github.com/dynamoMTL/' + repo + '/compare/' + branch);
 		});
 
 		bot.on('^!pt (.+)', function(story_id,speaker){
